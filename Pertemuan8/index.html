@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+    <h1 id="Demo"></h1>
+    <script>
+        //localStorage.setItem("Name","Celline Oktavia"); //localStorage : ketika browser ditutup maka data akan tersimpan permanen.
+        //document.getElementById("Demo").innerHTML = localStorage.getItem("Name");
+
+        //sessionStorage.setItem("Name","Celline Oktavia"); //sessionStorage : ketika browser ditutup maka data akan tersimpan sementara dan terhapus (aktif saat hidup)
+        document.getElementById("Demo").innerHTML = sessionStorage.getItem("Name");
+
+        //Lihat perbedaan cara kerja keduanya dengan memberi tanda komentar // pada set item
+        //dan membuka tutup browser
+
+        //cookie --> terhapus ketika expired, akan terkirim ke sever ketika request (misal login dll)
+        //document.cookie = "username = Celline Oktavia Cookie";
+    </script>
+</body>
+</html>

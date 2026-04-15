@@ -1,7 +1,7 @@
 // Jalankan setelah halaman siap
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ✅ Smooth Scroll
+  //Smooth Scroll
   const btnScroll = document.getElementById("btnScroll");
   if (btnScroll) {
     btnScroll.addEventListener("click", function () {
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ✅ Validasi Form
+  // Validasi Form
   const form = document.getElementById("formKontak");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // ✅ Navbar Active
+  // Navbar Active
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach(link => {
     link.addEventListener("click", function () {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ✅ Animasi Scroll
+  // Animasi Scroll
   const elements = document.querySelectorAll(".fade-in");
 
   function tampilSaatScroll() {

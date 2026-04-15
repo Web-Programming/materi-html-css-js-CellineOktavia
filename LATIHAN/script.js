@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (btnScroll) {
     btnScroll.addEventListener("click", function () {
       document.getElementById("tentang").scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth" 
       });
     });
   }

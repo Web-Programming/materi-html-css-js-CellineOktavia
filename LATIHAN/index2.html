@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0,0,0,0.8);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero p {
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Section */
+    section {
+      padding: 80px 0;
+    }
+
+    /* Card hover */
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+    }
+
+    /* Animasi */
+    @keyframes fadeInDown {
+      from {opacity:0; transform: translateY(-50px);} 
+      to {opacity:1; transform: translateY(0);} 
+    }
+
+    @keyframes fadeInUp {
+      from {opacity:0; transform: translateY(50px);} 
+      to {opacity:1; transform: translateY(0);} 
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">MyPorto</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Halo, Saya Celline</h1>
+    <p class="lead">Web Developer | UI Designer | Mahasiswa</p>
+    <button class="btn btn-light mt-3" onclick="scrollToSection('about')">Lihat Lebih</button>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container text-center" data-aos="fade-up">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah seorang mahasiswa yang memiliki minat dalam pengembangan website modern, desain UI/UX, dan teknologi digital.</p>
+  </div>
+</section>
+
+<!-- Skill -->
+<section id="skill" class="bg-light">
+  <div class="container">
+    <h2 class="text-center" data-aos="fade-up">Skill</h2>
+    <div class="row text-center mt-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card p-3">
+          <h5>HTML & CSS</h5>
+          <div class="progress">
+            <div class="progress-bar" style="width:90%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card p-3">
+          <h5>JavaScript</h5>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card p-3">
+          <h5>Bootstrap</h5>
+          <div class="progress">
+            <div class="progress-bar bg-info" style="width:85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project -->
+<section id="project">
+  <div class="container">
+    <h2 class="text-center" data-aos="fade-up">Project</h2>
+    <div class="row mt-4">
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5>Website Toko Online</h5>
+            <p>Project e-commerce sederhana dengan fitur keranjang.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5>Website Portofolio</h5>
+            <p>Website personal interaktif dan responsif.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="flip-left">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top">
+          <div class="card-body">
+            <h5>Landing Page</h5>
+            <p>Desain landing page modern untuk bisnis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light">
+  <div class="container">
+    <h2 class="text-center" data-aos="fade-up">Contact</h2>
+    <form id="contactForm" class="mt-4" data-aos="fade-up">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Nama" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" placeholder="Pesan" required></textarea>
+      </div>
+      <button class="btn btn-primary">Kirim</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>&copy; 2026 Portofolio Celline</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init();
+
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Pesan berhasil dikirim!");
+  });
+</script>
+
+</body>
+</html>
